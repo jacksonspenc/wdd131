@@ -87,7 +87,7 @@ width: 90%;
 height: 200px; 
 background-color: gold; 
 grid-column: 2 / 3;
-justify-content: right;
+justify-self: right;
 } 
 .blue3 {
 width: 100%;
@@ -98,6 +98,7 @@ grid-column: 1 / 3;
  /* Activity 4 styles */ 
 .content4 {
     /* This is the parent of the activity 4 boxes. */
+    display: grid;
     grid-template-columns: repeat(2, 1fr);
     grid-template-rows: repeat(3, 1fr);
 }
