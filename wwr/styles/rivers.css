@@ -82,9 +82,10 @@ footer{
 .home-title{
     color:white;
     font-family:Gloock, Mooli;
-    font-size: 2em;
+    font-size: 3em;
     margin-top: 10px;
     float: center;
+    grid-column: 2 / 5;
 }
 h4{
     color:white;
