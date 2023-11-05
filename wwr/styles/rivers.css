@@ -80,6 +80,7 @@ footer{
     font-family:Gloock, Mooli;
     font-size: 2em;
     margin-top: 10px;
+    justify-self: center;
 }
 h4{
     color:white;
