@@ -19,7 +19,9 @@ nav a {
     text-align:center;
 }
 main section{
-    text-align:center;
+    text-align: center; 
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
 }
 #background{
     height: 725px;
@@ -37,6 +39,7 @@ body{
 h2 {
     margin: 0;
     color: white;
+    font-size: 22px;
 }
 header{
     background-color:black;
@@ -122,13 +125,15 @@ footer p a:hover {
 footer .social img {
     padding-top: 15px;
 }
-.rivers-card, .camping-card, .rapids-card {
+.rivers-card, .camping-card {
     margin: 200px 0;
 }
 .card-img {
     border: 10px solid #d9c2a3;
     transition: transform .5s;
     box-shadow: 5px 5px 10px #6f7364;
+    grid-column: 1 / 2;
+    width: 100%;
 }
 main section img {
     box-sizing: border-box;
