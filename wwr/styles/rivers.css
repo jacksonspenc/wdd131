@@ -95,6 +95,7 @@ h4{
 .msg h2{
     color:white;
     font-family:Gloock, Mooli;
+    align-items: center;
 }
 .msg p{
     color:white;
