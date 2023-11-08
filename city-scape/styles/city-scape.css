@@ -1,0 +1,32 @@
+body{
+    max-width: 600px;
+    background-color: white;
+    font-family: 'Courier New', Courier, monospace;
+}
+.city_pic{
+    justify-self: auto;
+}
+.text h3{
+    font-size: small;
+    text-decoration-color: blue;
+}
+.text{
+    justify-self: center;
+}
+.text p{
+    text-decoration-color: grey;
+}
+footer{
+    background-color: blue;
+    display: grid;
+    grid-template-columns: 1fr, 1fr, 1fr;
+}
+#box-1{
+    grid-column: 1 / 2;
+}
+#box-2{
+    grid-column: 2 / 3;
+}
+#box-3{
+    grid-column: 3 / 4;
+}
