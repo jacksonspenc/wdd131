@@ -1,25 +1,26 @@
 body{
-    max-width: 600px;
+    max-width: 400px;
     background-color: white;
-    font-family: 'Courier New', Courier, monospace;
+    font-family: Lato;
 }
 .city_pic{
     justify-self: auto;
 }
 .text h3{
     font-size: small;
-    text-decoration-color: blue;
+    background-color: blue;
 }
 .text{
     justify-self: center;
 }
 .text p{
-    text-decoration-color: grey;
+    background-color: grey;
 }
 footer{
     background-color: blue;
     display: grid;
     grid-template-columns: 1fr, 1fr, 1fr;
+    gap: 5px
 }
 #box-1{
     grid-column: 1 / 2;
