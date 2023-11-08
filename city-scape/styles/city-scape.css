@@ -1,7 +1,7 @@
 body{
     max-width: 400px;
     background-color: white;
-    font-family: Lato;
+    font-family: sans-serif;
 }
 .city_pic{
     justify-self: auto;
