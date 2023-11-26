@@ -5,7 +5,7 @@
     background-color: #396E94;
 }
 #content{
-    max-width: 1000px;
+    max-width: 1200px;
     margin: 0 auto;
 }
 header{
@@ -53,5 +53,5 @@ nav a{
     justify-content: center;
 }
 .girl-piano{
-    align-content: center;
+    text-align: center;
 }
