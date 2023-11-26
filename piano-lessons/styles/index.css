@@ -16,6 +16,8 @@ header{
 .logo_link{
     justify-self:start;
     background-color: #396E94;
+    max-width: 70%;
+    max-height: 70%;
 }
 .welcome-text{
     font-size: 30px;
