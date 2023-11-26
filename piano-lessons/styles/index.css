@@ -69,3 +69,8 @@ p{
     font-family: Moogli, Source Sans 3;
     color:#0D070A;
 }
+footer p{
+    color:#E7C24F;
+    text-decoration: none;
+    font-size: 20px;
+}
