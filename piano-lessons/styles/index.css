@@ -36,7 +36,6 @@ header{
 }
 header nav a{
     grid-column: 2/6;
-    text-align: center;
     color:#588157;
     text-decoration: none;
     padding: 35px;
