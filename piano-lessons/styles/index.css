@@ -44,7 +44,7 @@ nav a{
     grid-column: 2/3;
     color:#588157;
     text-decoration: none;
-    padding: 35px;
+    padding: 25px;
     text-align: center;
 }
 .welcome{
@@ -53,5 +53,5 @@ nav a{
     justify-content: center;
 }
 .girl-piano{
-    justify-content: center;
+    align-content: center;
 }
