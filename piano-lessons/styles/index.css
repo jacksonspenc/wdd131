@@ -12,6 +12,7 @@ header{
     display: grid;
     grid-template-columns: 1fr 1fr;
     background-color: #396E94;
+    margin-bottom: 50px;
 }
 .logo_link{
     justify-self:start;
@@ -28,7 +29,7 @@ header{
 .welcome-img{
     max-width: 100%;
     max-height: 100%;
-    margin-left: 75px;
+    margin-left: 150px;
     background-color: #396E94;
 }
 .lessons{
@@ -36,12 +37,14 @@ header{
     grid-column: 1/3;
     font-size: 30px;
     background-color: #396E94;
+    margin: 50px;
 }
 .girl{
     grid-row: 3/4;
     grid-column: 1/3;
     text-align: center;
     background-color: #396E94;
+    margin: 50px;
 }
 footer{
     padding: 25px 50px;
