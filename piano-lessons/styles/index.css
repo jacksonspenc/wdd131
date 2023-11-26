@@ -14,13 +14,13 @@ header{
 .logo_link{
     justify-self:start;
 }
-p.welcome-text{
-    grid-row:1/2;
-    grid-column: 1/2;
+welcome-text{
+    font-size: 20px;
+    padding-left: 20px;
 }
-img.welcome-img{
-    grid-row: 1/2;
-    grid-column: 2/3;
+welcome-img{
+    max-width: 100%;
+    max-height: 100%;
 }
 .lessons{
     grid-row: 2/3;
@@ -42,5 +42,7 @@ nav a{
     text-align: center;
 }
 .welcome{
-    grid-row: 1/2
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
