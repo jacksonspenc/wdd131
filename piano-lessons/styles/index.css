@@ -40,3 +40,6 @@ header nav a{
     text-decoration: none;
     padding: 35px;
 }
+.welcome{
+    grid-row: 1/2
+}
