@@ -23,8 +23,7 @@ header{
 .welcome-text{
     font-size: 30px;
     padding-left: 20px;
-    background-color: #396E94;
-    
+    background-color: #396E94; 
 }
 .welcome-img{
     max-width: 100%;
