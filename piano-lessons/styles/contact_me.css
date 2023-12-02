@@ -102,6 +102,8 @@ body{
   text-align: center;
   background-color: #396E94;
   margin: 50px;
+  max-width: 60%;
+  max-height: 60%;
 }
 .piano-is{
   grid-row: 2/3;
