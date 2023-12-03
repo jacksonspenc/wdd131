@@ -92,7 +92,7 @@ body{
 }
 .wedding{
   max-width: 100%;
-  max-height: 100%;
+  height: auto;
   margin-left: 150px;
   background-color: #396E94;
 }
@@ -103,7 +103,7 @@ body{
   background-color: #396E94;
   margin: 50px;
   max-width: 60%;
-  max-height: 60%;
+  height: auto;
 }
 .piano-is{
   grid-row: 2/3;
