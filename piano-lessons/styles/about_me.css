@@ -38,6 +38,7 @@ header{
     font-size: 30px;
     background-color: #396E94;
     margin: 50px;
+    margin-bottom: 50px;
 }
 .baby{
     grid-row: 3/4;
