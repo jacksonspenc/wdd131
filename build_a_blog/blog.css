@@ -30,7 +30,7 @@
         grid-template-columns: 1fr 1fr 1fr;
         justify-content: end;
         justify-items: end;
-        grid-column-start: 2;
+        grid-column-start: 1;
         list-style-type: none;
         color: var(--link-color);
         font-size: 1.2em;
