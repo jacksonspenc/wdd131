@@ -1,4 +1,3 @@
-// events.js
 let tasks = [];
 
 function taskTemplate(task) {
