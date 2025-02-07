@@ -12,7 +12,7 @@ input[type=text], select, textarea {
   
 /* Style the submit button with a specific background color etc */
 input[type=submit] {
-  background-color: #E7C24F;
+  background-color: black;
   color: white;
   padding: 12px 20px;
   border: none;
@@ -22,7 +22,7 @@ input[type=submit] {
   
 /* When moving the mouse over the submit button, add a darker green color */
 input[type=submit]:hover {
-  background-color: yellow;
+  background-color: black;
 }
   
 /* Add a background color and some padding around the form */
@@ -63,14 +63,14 @@ footer{
 }
 nav a{
   grid-column: 2/3;
-  color:#E7C24F;
+  color:black;
   text-decoration: none;
   padding: 25px;
   text-align: center;
   font-size: 20px;
 }
 footer a{
-  color:#E7C24F;
+  color:black;
   text-decoration: none;
   font-size: 20px;
 }
@@ -79,7 +79,7 @@ p{
   color:#0D070A;
 }
 footer p{
-  color:#E7C24F;
+  color:black;
   text-decoration: none;
   font-size: 20px;
 }
