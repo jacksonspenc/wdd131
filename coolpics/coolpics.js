@@ -19,6 +19,8 @@ function handleResize() {
         navigation.classList.add("hide")
     }
 }
+handleResize();
+window.addEventListener("resize", handleResize);
 
 function viewerTemplate(pic, alt) {
     return `<div class="viewer">
