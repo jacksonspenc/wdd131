@@ -5,7 +5,7 @@ const articles = [
 		date: 'July 5, 2022',
 		description:
 			'If you enjoy stories about seventh sons of seventh sons and magyk this is the book for you.',
-		imgSrc: 'file:///C:/Users/jacks/Downloads/Magkycover2.jpg',
+		imgSrc: 'Magkycover2.jpg',
 		imgAlt: 'Book cover for Septimus Heap 1',
 		ages: '10-14',
 		genre: 'Fantasy',
@@ -18,7 +18,7 @@ const articles = [
 		description:
 			'The anticipated new novel by Rick Riordan. After Greek mythology (Percy Jackson), Greek/Roman (Heroes of Olympus), and Egyptian (Kane Chronicles), Rick decides to try his hand with Norse Mythology, and the end result is good.',
 		imgSrc:
-			'file:///C:/Users/jacks/Pictures/xWuyBAAAQBAJ%20(1).jpg',
+			'xWuyBAAAQBAJ%20(1).jpg',
 		imgAlt: 'Book cover for Magnus Chase 1',
 		ages: '12-16',
 		genre: 'Fantasy',
