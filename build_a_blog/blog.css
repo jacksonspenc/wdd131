@@ -50,14 +50,14 @@
     .itemBook {
         display: grid;
         grid-template-columns: 1fr 2fr;
-        justify-content: center;
-        justify-items: center;
+        justify-content: left;
+        justify-items: left;
         text-align: left;
         align-content: center;
     }
     .metaBook {
         border-right: 1px solid var(--border-color);
-        text-align: center;
+        text-align: left;
     }
     h3 {
         color: var(--link-color);
