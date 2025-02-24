@@ -25,3 +25,42 @@ const articles = [
 		stars: '⭐⭐⭐⭐'
 	}
 ]
+function displayArticles() {
+    const container = document.getElementById("articles-container");
+
+    articles.forEach(article => {
+        const articleDiv = document.createElement("div");
+        articleDiv.classList.add("article");
+
+        const img = document.createElement("img");
+        img.src = article.imgSrc;
+        img.alt = article.imgAlt;
+
+        const title = document.createElement("h2");
+        title.textContent = article.title;
+
+        const date = document.createElement("p");
+        date.classList.add("date");
+        date.textContent = `Published: ${article.date}`;
+
+        const description = document.createElement("p");
+        description.textContent = article.description;
+
+        const details = document.createElement("p");
+        details.innerHTML = `<strong>Age Group:</strong> ${article.ages} | <strong>Genre:</strong> ${article.genre}`;
+
+        const stars = document.createElement("p");
+        stars.classList.add("stars");
+        stars.textContent = `Rating: ${article.stars}`;
+
+        articleDiv.appendChild(img);
+        articleDiv.appendChild(title);
+        articleDiv.appendChild(date);
+        articleDiv.appendChild(description);
+        articleDiv.appendChild(details);
+        articleDiv.appendChild(stars);
+        container.appendChild(articleDiv);
+    });
+}
+
+document.addEventListener("DOMContentLoaded", displayArticles);
