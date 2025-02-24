@@ -24,7 +24,8 @@ const articles = [
 		genre: 'Fantasy',
 		stars: '⭐⭐⭐⭐'
 	}
-]
+];
+
 function displayArticles() {
     const container = document.getElementById("articles-container");
 
