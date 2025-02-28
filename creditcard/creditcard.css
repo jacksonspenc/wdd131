@@ -8,7 +8,7 @@ body {
 }
 
 .form-container {
-    width: 300px;
+    width: 350px;
 }
 
 .card {
@@ -23,9 +23,9 @@ body {
     width: 100%;
     height: 100%;
     border-radius: 10px;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
     padding: 20px;
-    background: white;
+    background: #e0e0e0;
 }
 
 .card-front {
@@ -52,7 +52,9 @@ body {
 .card-back {
     z-index: 1;
     background-color: #bbb;
-    top: 10px;
+    top: 20px;
+    left: 20px;
+    padding-top: 40px;
 }
 
 .black-strip {
@@ -68,10 +70,10 @@ button {
     margin-top: 20px;
     width: 100%;
     padding: 10px;
-    border: none;
+    border: 2px solid black;
     border-radius: 5px;
-    background: blue;
-    color: white;
+    background: white;
+    color: black;
     font-size: 16px;
     cursor: pointer;
 }
