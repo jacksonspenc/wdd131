@@ -67,7 +67,7 @@ body {
 }
 
 button {
-    margin-top: 90px;
+    margin-top: 125px;
     width: 100%;
     padding: 10px;
     border: 2px solid black;
@@ -79,6 +79,8 @@ button {
 }
 
 .cvv-container {
-    align-self: flex-end;
+    align-self: flex-start;
+    top: 200px;
+    left: 150px;
 }
 
