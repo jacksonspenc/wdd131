@@ -52,17 +52,17 @@ body {
 .card-back {
     z-index: 1;
     background-color: #bbb;
-    top: 200px;
-    left: 200px;
+    top: 50px;
+    left: 110px;
     padding-top: 40px;
 }
 
 .black-strip {
     position: absolute;
-    top: 10px;
+    top: 20px;
     left: 0;
     width: 100%;
-    height: 30px;
+    height: 50px;
     background: black;
 }
 
@@ -77,3 +77,8 @@ button {
     font-size: 16px;
     cursor: pointer;
 }
+
+.cvv-container {
+    align-self: flex-end;
+}
+
