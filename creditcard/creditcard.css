@@ -79,8 +79,8 @@ button {
 }
 
 .cvv-container {
-    align-self: flex-start;
-    top: 200px;
-    left: 150px;
+    position: absolute;
+    bottom: 20px;
+    right: 20px;
+    text-align: right;
 }
-
