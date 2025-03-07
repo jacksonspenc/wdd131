@@ -4,13 +4,16 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Dynamic Form Participants</title>
-    <link rel="stylesheet" href="styles.css"> <!-- Link to external CSS file -->
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
 
     <form id="registrationForm">
         <fieldset id="participants">
             <legend>Participants</legend>
+
+            <label for="adultName">Adult Name:</label>
+            <input type="text" id="adultName" name="adultName" required>    
 
             <div id="participantContainer">
                 <section class="participant" id="participant1">
@@ -19,10 +22,14 @@
 
                     <label for="email1">Email:</label>
                     <input type="email" id="email1" name="email1">
+
+                    <label for="fee1">Fee ($):</label>
+                    <input type="number" id="fee1" name="fee1" class="fee" min="0" value="0">
                 </section>
             </div>
 
             <button type="button" id="addParticipant">Add Participant</button>
+            <button type="submit" id="submitForm">Submit</button>
         </fieldset>
     </form>
 

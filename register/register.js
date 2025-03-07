@@ -1,24 +1,46 @@
 document.addEventListener("DOMContentLoaded", function () {
-    let participantCount = 1; // Set initial count to 1
+    let participantCount = 1;
 
+    // Add participant button event listener
     document.getElementById("addParticipant").addEventListener("click", function () {
-        participantCount++; // Increment participant count
+        participantCount++;
+        let newParticipantHTML = participantTemplate(participantCount);
+        document.getElementById("addParticipant").insertAdjacentHTML("beforebegin", newParticipantHTML);
+    });
 
-        // Select the first participant section to clone
-        let firstParticipant = document.querySelector(".participant");
-        let newParticipant = firstParticipant.cloneNode(true); // Deep clone
+    // Handle form submission
+    document.getElementById("registrationForm").addEventListener("submit", function (event) {
+        event.preventDefault(); // Prevent form from reloading the page
 
-        // Update the new section's attributes to ensure unique IDs
-        newParticipant.id = "participant" + participantCount;
-        newParticipant.querySelector("label[for='name1']").setAttribute("for", "name" + participantCount);
-        newParticipant.querySelector("input[id='name1']").id = "name" + participantCount;
-        newParticipant.querySelector("input[name='name1']").name = "name" + participantCount;
+        // Get total fee amount
+        let totalFee = 0;
+        document.querySelectorAll(".fee").forEach(feeInput => {
+            totalFee += parseFloat(feeInput.value) || 0;
+        });
 
-        newParticipant.querySelector("label[for='email1']").setAttribute("for", "email" + participantCount);
-        newParticipant.querySelector("input[id='email1']").id = "email" + participantCount;
-        newParticipant.querySelector("input[name='email1']").name = "email" + participantCount;
+        // Get adult name
+        let adultName = document.getElementById("adultName").value;
 
-        // Insert new participant before the button
-        document.getElementById("participants").insertBefore(newParticipant, document.getElementById("addParticipant"));
+        // Hide form and show summary
+        document.getElementById("registrationForm").style.display = "none";
+        let summary = document.getElementById("summary");
+        summary.style.display = "block";
+        summary.innerHTML = `Thank you <strong>${adultName}</strong> for registering. You have registered <strong>${participantCount}</strong> participants and owe <strong>$${totalFee.toFixed(2)}</strong> in fees.`;
     });
 });
+
+// Function to generate participant HTML
+function participantTemplate(count) {
+    return `
+        <section class="participant" id="participant${count}">
+            <label for="name${count}">Name:</label>
+            <input type="text" id="name${count}" name="name${count}">
+
+            <label for="email${count}">Email:</label>
+            <input type="email" id="email${count}" name="email${count}">
+
+            <label for="fee${count}">Fee ($):</label>
+            <input type="number" id="fee${count}" name="fee${count}" class="fee" min="0" value="0">
+        </section>
+    `;
+}
