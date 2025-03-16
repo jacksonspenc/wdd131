@@ -1,0 +1,104 @@
+.web-name {
+    margin: 0px;
+    font-size: 60px;
+    font-family: Dosis, sans-serif;
+    font-weight: 100;
+    align-self: flex-end;
+}
+
+img {
+	max-width: 100%;
+}
+
+#logo img {
+    width: 100px;
+}
+
+#logo {
+    margin: 20px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.search-container {
+    display: flex;
+    justify-content: center;
+}
+
+input {
+    width: 300px;
+}
+
+.recipe {
+    margin: 50px;
+    border-style: solid;
+    border-radius: 5px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+.food-img {
+    margin: 15px;
+    width: 50%;
+    height: 400px;
+}
+
+.detail {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+}
+
+.category {
+    margin: 15px;
+    padding: 3px;
+    width: fit-content;
+    border-style: solid;
+    font-size: 15px;
+}
+
+.dessert-name {
+    color: #59c3c3;
+    margin: 15px;
+    margin-bottom: 0px;
+    font-size: 35px;
+    font-family: Amatic SC, sans-serif;
+    font-weight: 100;
+}
+
+.rating {
+    margin: 15px;
+}
+
+.tags-container {
+    display: flex;
+    flex-direction: row;
+}
+
+p {
+    margin: 15px;
+    font-size:15px;
+}
+
+a img {
+    margin: 5px;
+    width: 50px;
+}
+
+#footer div {
+    width: fit-content;
+    margin-left: 50px;
+}
+
+#social {
+    margin-left: 50px;
+    margin-right: 50px;
+    margin-bottom: 0px;
+    width: fit-content;
+}
+
+#no-result {
+    text-align: center;
+}
