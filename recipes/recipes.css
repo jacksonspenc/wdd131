@@ -102,3 +102,40 @@ a img {
 #no-result {
     text-align: center;
 }
+
+@media screen and (max-width: 600px) {
+    p {
+        display: none;
+    }
+
+    #social {
+        display: flex;
+        justify-content: center;
+    }
+
+    #footer div {
+        width: fit-content;
+        margin: auto auto;
+    }
+
+    .recipe {
+        flex-direction: column;
+    }
+
+    .food-img, .detail {
+        width: auto;
+    }
+}
+
+@media screen and (min-width: 600px) {
+    #footer {
+        display: flex;
+        flex-direction: row-reverse;
+        justify-content: space-between;
+        align-items: flex-end;
+    }
+
+    #reference {
+        align-self: center;
+    }
+}
