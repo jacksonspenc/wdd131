@@ -42,7 +42,7 @@ input {
 .food-img {
     margin: 15px;
     width: 50%;
-    height: 400px;
+    height: 50%;
 }
 
 .detail {
@@ -60,7 +60,7 @@ input {
 }
 
 .dessert-name {
-    color: #59c3c3;
+    color: #117070;
     margin: 15px;
     margin-bottom: 0px;
     font-size: 35px;
