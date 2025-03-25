@@ -1,7 +1,7 @@
-import recipes from ".recipes.mjs"
+import recipes from "./recipes.mjs"
 
 function random(num) {
-    return Math.floor(Math.random()*num);
+    return Math.floor(Math.random()*5);
 }
 
 function getRandomListEntry(list) {
@@ -13,4 +13,5 @@ function init() {
     const recipe = getRandomListEntry(recipes);
     // render the recipe with renderRecipes.
     renderRecipes([recipe]);
-  }
+}
+
