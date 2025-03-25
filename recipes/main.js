@@ -77,3 +77,13 @@ function init() {
     const recipe = getRandomListEntry(recipes);
     renderRecipes([recipe]);
 }
+
+function search(recipe, query) {
+    if (recipe.name.toLowerCase().includes(query) ||
+        recipe.tags.find((item) => item.toLowerCase().includes(query)) ||
+        recipe.description.toLowerCase().includes(query) ||
+        recipe.recipeIngredient.find((item) => item.toLowerCase().includes(query))) {
+        return true;
+    }
+    return false;
+}
