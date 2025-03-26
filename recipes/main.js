@@ -78,6 +78,8 @@ function init() {
     renderRecipes([recipe]);
 }
 
+window.addEventListener('DOMContentLoaded', init);
+
 function search(recipe, query) {
     if (recipe.name.toLowerCase().includes(query) ||
         recipe.tags.find((item) => item.toLowerCase().includes(query)) ||
