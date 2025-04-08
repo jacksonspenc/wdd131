@@ -53,36 +53,20 @@ textarea.setAttribute('name', 'subject');
 textarea.setAttribute('placeholder', 'Write something..');
 textarea.style.height = '200px';
 
-// Submit Button
-const submitBtn = document.createElement('input');
-submitBtn.setAttribute('type', 'submit');
-submitBtn.setAttribute('value', 'Submit');
-
-// Label for state input
+// --- State Filter Section ---
 const labelState = document.createElement('label');
 labelState.setAttribute('for', 'state');
 labelState.textContent = 'State';
 
-// Input for state
 const inputState = document.createElement('input');
 inputState.setAttribute('type', 'text');
 inputState.setAttribute('id', 'state');
 inputState.setAttribute('name', 'state');
 inputState.setAttribute('placeholder', 'Type your state...');
 
-// Container for autocomplete suggestions
 const suggestions = document.createElement('div');
 suggestions.setAttribute('id', 'suggestions');
-suggestions.style.border = '1px solid #ccc';
-suggestions.style.maxHeight = '150px';
-suggestions.style.overflowY = 'auto';
-suggestions.style.display = 'none';
-suggestions.style.position = 'absolute';
-suggestions.style.backgroundColor = 'white';
-suggestions.style.zIndex = '1000';
-suggestions.style.width = '200px';
 
-// List of U.S. states (can expand this)
 const states = [
   'Alabama', 'Alaska', 'Arizona', 'Arkansas', 'California', 'Colorado',
   'Connecticut', 'Delaware', 'Florida', 'Georgia', 'Hawaii', 'Idaho',
@@ -96,7 +80,6 @@ const states = [
   'West Virginia', 'Wisconsin', 'Wyoming'
 ];
 
-// Filter states on input
 inputState.addEventListener('input', () => {
   const value = inputState.value.toLowerCase();
   suggestions.innerHTML = '';
@@ -107,8 +90,6 @@ inputState.addEventListener('input', () => {
     filtered.forEach(state => {
       const option = document.createElement('div');
       option.textContent = state;
-      option.style.padding = '5px';
-      option.style.cursor = 'pointer';
       option.addEventListener('click', () => {
         inputState.value = state;
         suggestions.innerHTML = '';
@@ -122,28 +103,28 @@ inputState.addEventListener('input', () => {
   }
 });
 
-// Hide suggestions if clicked outside
 document.addEventListener('click', (e) => {
   if (e.target !== inputState) {
     suggestions.style.display = 'none';
   }
 });
 
-// Wrap input and suggestions in a container for layout
 const stateWrapper = document.createElement('div');
 stateWrapper.style.position = 'relative';
 stateWrapper.appendChild(inputState);
 stateWrapper.appendChild(suggestions);
 
-// Append all to form
+// Submit Button
+const submitBtn = document.createElement('input');
+submitBtn.setAttribute('type', 'submit');
+submitBtn.setAttribute('value', 'Submit');
+
+// Append to form
 form.appendChild(labelFname);
 form.appendChild(inputFname);
 
 form.appendChild(labelLname);
 form.appendChild(inputLname);
-
-form.appendChild(labelState);
-form.appendChild(stateWrapper);
 
 form.appendChild(labelSkill);
 form.appendChild(selectSkill);
@@ -151,8 +132,10 @@ form.appendChild(selectSkill);
 form.appendChild(labelSubject);
 form.appendChild(textarea);
 
+form.appendChild(labelState);
+form.appendChild(stateWrapper);
+
 form.appendChild(submitBtn);
 
-// Append form to container and container to body
 container.appendChild(form);
-document.body.appendChild(container);
+document.getElementById('app').appendChild(container);

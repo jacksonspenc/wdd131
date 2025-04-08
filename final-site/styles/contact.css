@@ -108,3 +108,41 @@ body{
   background-color: #F1E7D4;
   margin: 50px;
 }
+.container {
+    max-width: 500px;
+    margin: 2rem auto;
+    padding: 1rem;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    font-family: sans-serif;
+  }
+  
+  input, select, textarea {
+    width: 100%;
+    margin-bottom: 1rem;
+    padding: 0.5rem;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+  }
+  
+  label {
+    font-weight: bold;
+    display: block;
+    margin-bottom: 0.5rem;
+  }
+
+  #suggestions {
+    border: 1px solid #ccc;
+    max-height: 150px;
+    overflow-y: auto;
+    display: none;
+    position: absolute;
+    background-color: white;
+    z-index: 1000;
+    width: 200px;
+  }
+  
+  #suggestions div {
+    padding: 5px;
+    cursor: pointer;
+  }
