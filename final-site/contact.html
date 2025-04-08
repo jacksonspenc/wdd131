@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Source+Sans+3&display=swap" />
+    <link rel="stylesheet" href="styles/contact_me.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div id="content">
+    <header>
+        <a id="logo_link" href="index.html">
+            <img class="logo" src="images/J.png" alt="Jacksons Studio">
+        </a>
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="contact.html">Contact Me</a>
+        </nav>
+    </header>
+    <main class="home-grid">
+        <section class="you-can">
+            <p>You can leave your information in the form below and contact me on instagram to get in touch!</p>
+        </section>
+        <section class="images">
+            <img class="wedding" src="images/reception-venue.avif" alt="Wedding">
+        </section>
+        <div class="container">
+            <form action="action_page.php">
+          
+              <label for="fname">First Name</label>
+              <input type="text" id="fname" name="firstname" placeholder="Your name..">
+          
+              <label for="lname">Last Name</label>
+              <input type="text" id="lname" name="lastname" placeholder="Your last name..">
+          
+              <label for="skill level">Skill Level</label>
+              <select id="skill level" name="Skill Level">
+                <option value="Beginner">Beginner</option>
+                <option value="Intermediate">Intermediate</option>
+                <option value="Advanced">Advanced</option>
+              </select>
+          
+              <label for="subject">Subject</label>
+              <textarea id="subject" name="subject" placeholder="Write something.." style="height:200px"></textarea>
+          
+              <input type="submit" value="Submit">
+          
+            </form>
+        </div>
+    </main>
+    <footer>
+        <p><a>Jackson's Wedding Piano &copy; 2023</a></p>
+        <p><a href="index.html">Home</a></p>
+        <p><a href="contact.html">Contact Me</a></p>
+    </footer>
+    </div>
+</body>
+</html>
