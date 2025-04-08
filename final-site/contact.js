@@ -26,22 +26,6 @@ inputLname.setAttribute('id', 'lname');
 inputLname.setAttribute('name', 'lastname');
 inputLname.setAttribute('placeholder', 'Your last name..');
 
-// Skill Level
-const labelSkill = document.createElement('label');
-labelSkill.setAttribute('for', 'skill level');
-labelSkill.textContent = 'Skill Level';
-
-const selectSkill = document.createElement('select');
-selectSkill.setAttribute('id', 'skill level');
-selectSkill.setAttribute('name', 'Skill Level');
-
-['Beginner', 'Intermediate', 'Advanced'].forEach(level => {
-  const option = document.createElement('option');
-  option.value = level;
-  option.textContent = level;
-  selectSkill.appendChild(option);
-});
-
 // Subject
 const labelSubject = document.createElement('label');
 labelSubject.setAttribute('for', 'subject');
@@ -126,14 +110,11 @@ form.appendChild(inputFname);
 form.appendChild(labelLname);
 form.appendChild(inputLname);
 
-form.appendChild(labelSkill);
-form.appendChild(selectSkill);
+form.appendChild(labelState);
+form.appendChild(stateWrapper);
 
 form.appendChild(labelSubject);
 form.appendChild(textarea);
-
-form.appendChild(labelState);
-form.appendChild(stateWrapper);
 
 form.appendChild(submitBtn);
 
